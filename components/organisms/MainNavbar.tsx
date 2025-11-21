@@ -110,7 +110,7 @@ export const MainNavbar = React.memo(() => {
           {/* Logo */}
           <div className="flex items-center cursor-pointer text-white">
             <Image
-              src="/AxiomLogo.png"
+              src="/Axiomlogo.png"
               alt="Axiom Logo"
               width={24}
               height={24}
