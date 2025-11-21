@@ -102,7 +102,7 @@ export const MainNavbar = React.memo(() => {
   /* ------------------------------ RENDER ------------------------------ */
   return (
     <>
-      <nav className="h-14 bg-black border-b border-zinc-800 flex items-center justify-between px-4 lg:px-6 shrink-0">
+      <nav className="h-14 bg-black border-b border-zinc-800 flex items-center justify-between px-4 lg:px-6 shrink-0 ">
 
         {/* -------------------------------- LEFT SECTION -------------------------------- */}
         <div className="flex items-center gap-6">
@@ -144,7 +144,7 @@ export const MainNavbar = React.memo(() => {
           {/*  SEARCH BUTTON — triggers modal */}
           <button
             onClick={openSearch}
-            className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#101114] border border-zinc-700/60 text-zinc-300 hover:bg-[#18191d] transition-colors"
+            className="w-10 h-9 flex items-center justify-center rounded-full bg-[#101114] border border-zinc-700/60 text-zinc-300 hover:bg-[#18191d] transition-colors"
           >
             <Search size={18} />
           </button>
@@ -153,7 +153,7 @@ export const MainNavbar = React.memo(() => {
           <div className="relative" ref={networkRef}>
             <button
               onClick={() => setNetworkMenuOpen((s) => !s)}
-              className="flex items-center h-10 px-4 rounded-lg bg-[#101114] border border-green-900/40 hover:bg-[#18191d] transition-all gap-2"
+              className="flex items-center h-9 px-4 rounded-full bg-[#101114] border border-green-900/40 hover:bg-[#18191d] transition-all gap-2"
             >
               {selectedNetwork === 'SOL' ? (
                 <Image
@@ -172,7 +172,7 @@ export const MainNavbar = React.memo(() => {
                 />
               )}
               <span className="text-sm text-zinc-200 font-semibold">{selectedNetwork}</span>
-              <ChevronDown size={16} className="text-zinc-500" />
+              <ChevronDown size={32} className="ml-1.5 text-zinc-500" />
             </button>
 
             {networkMenuOpen && (
@@ -199,7 +199,7 @@ export const MainNavbar = React.memo(() => {
           </div>
 
           {/* 🔵 Deposit */}
-          <button className="px-5 h-10 flex items-center justify-center rounded-full bg-indigo-600 hover:bg-indigo-500 text-black font-semibold text-sm transition-colors">
+          <button className="px-5 h-9 flex items-center justify-center rounded-full bg-indigo-600 hover:bg-indigo-500 text-black font-semibold text-sm transition-colors">
             Deposit
           </button>
 
@@ -215,7 +215,7 @@ export const MainNavbar = React.memo(() => {
           </button>
 
           {/* 💰 Wallet */}
-          <button className="flex items-center gap-2 bg-[#1c1d22] h-10 px-4 rounded-full border border-zinc-700 text-zinc-200 hover:bg-[#232428] transition-colors">
+          <button className="flex items-center gap-2 bg-[#1c1d22] h-10 px-3 pr-2 rounded-full border border-zinc-700 text-zinc-200 hover:bg-[#232428] transition-colors">
             <Wallet  width={30} height={20}/>
             <Image src="//logotyp.us/file/solana.svg" width={30} height={18} alt="sol" />
             <span className="text-sm font-semibold ">0</span>
@@ -223,12 +223,12 @@ export const MainNavbar = React.memo(() => {
             <Image src="/money1.png" width={28} height={28} alt="radio" />
             <span className="text-sm font-semibold">0</span>
 
-            <ChevronDown size={20} className="text-zinc-400" />
+            <ChevronDown size={22} className="text-zinc-400" />
           </button>
 
           {/* 👤 Profile */}
           <button className="w-12 h-9 flex items-center justify-center rounded-full bg-[#101114] border border-zinc-700 text-zinc-300 hover:bg-[#18191d] transition-colors">
-            <User size={20} className="text-zinc-300" />
+            <User size={18} className="text-zinc-300" />
           </button>
         </div>
       </nav>
