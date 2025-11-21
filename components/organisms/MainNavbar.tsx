@@ -220,7 +220,7 @@ export const MainNavbar = React.memo(() => {
             <Image src="//logotyp.us/file/solana.svg" width={30} height={18} alt="sol" />
             <span className="text-sm font-semibold ">0</span>
              <span className="text-lg font-thin text-zinc-500"> |</span>
-            <Image src="/money1.png" width={28} height={30} alt="radio" />
+            <Image src="/money1.png" width={28} height={28} alt="radio" />
             <span className="text-sm font-semibold">0</span>
 
             <ChevronDown size={20} className="text-zinc-400" />
