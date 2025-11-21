@@ -1,36 +1,174 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eterna Axiom
 
-## Getting Started
+Eterna Axiom is a modern **Next.js + TypeScript** web application built with a clean file structure and scalable architecture. This project follows the App Router pattern, uses modular components, hooks, utilities, and ships with an optimized production-ready setup.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Live Demo
+Visit: **https://eterna-axiom.vercel.app/**
+
+---
+
+## Features
+
+- Built using **Next.js (App Router)**
+- TypeScript-first development
+- Reusable and modular components
+- Custom hooks
+- Organized structure: `app/`, `components/`, `hooks/`, `lib/`, `public/`
+- Deployed on Vercel
+- Easily extendable for APIs, authentication, dashboards, or full-stack expansion
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** CSS (extendable to Tailwind, SCSS, etc.)
+- **Runtime:** Node.js
+- **Deployment:** Vercel
+
+---
+
+## Project Structure
+
+```
+/
+├─ app/                # App Router pages, layouts, server/client components
+├─ components/         # Shared and reusable UI components
+├─ hooks/              # Custom React hooks
+├─ lib/                # Utility functions, helpers, configs
+├─ public/             # Static assets (images, icons, favicon)
+├─ next.config.js      # Next.js configuration
+├─ tsconfig.json       # TypeScript configuration
+└─ package.json        # Project metadata and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Getting Started (Local Development)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Shreya-Mondal12/eterna-axiom.git
+cd eterna-axiomm
+```
 
-## Learn More
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Run Development Server
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open your browser at: **http://localhost:3000**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Build for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Create the production build:
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Start the production server:
+```bash
+npm start
+```
+
+---
+
+## Environment Variables
+
+If your project uses API keys or secrets:
+
+1. Create a file:
+```
+.env.local
+```
+
+2. Add values:
+```env
+NEXT_PUBLIC_API_URL=
+SECRET_API_KEY=
+```
+
+Note: `.env.local` is ignored by Git and safe for storing local secrets.
+
+---
+
+## Testing (Optional Setup)
+
+Recommended tools if you plan to add tests:
+
+- Jest or Vitest for unit tests
+- Playwright or Cypress for end-to-end tests
+
+Add a script:
+```json
+"test": "vitest"
+```
+
+---
+
+## Linting and Formatting
+
+Optional setup:
+
+- ESLint for linting
+- Prettier for formatting
+- Husky and lint-staged for pre-commit checks
+
+---
+
+## Deployment (Vercel)
+
+Steps to deploy:
+
+1. Go to https://vercel.com
+2. Import your GitHub repository
+3. Select Next.js (auto-detected)
+4. Deploy
+
+Every push triggers a new automatic deployment.
+
+---
+
+## Contributing
+
+1. Fork the project
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/my-feature
+   ```
+3. Commit your changes
+4. Open a pull request
+
+---
+
+## License
+
+Add your chosen license (MIT recommended). Create a `LICENSE` file if needed.
+
+---
+
+## Author
+
+Maintained by **Shreya Mondal**  
+GitHub: https://github.com/Shreya-Mondal12
+
+---
+
+## Support
+
+If you find this project useful, consider giving the repository a star on GitHub.
+
