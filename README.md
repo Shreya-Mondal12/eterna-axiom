@@ -5,7 +5,7 @@ Eterna Axiom is a modern **Next.js + TypeScript** web application built with a c
 ---
 
 ## Live Demo
-Visit: **https://eterna-axiom.vercel.app/**
+Visit: **[eterna-axiom.vercel.app/](https://eterna-axiom-gules.vercel.app/)**
 
 ---
 
